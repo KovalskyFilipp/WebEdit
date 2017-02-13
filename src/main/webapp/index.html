@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main page</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <script type="text/javascript" charset="utf-8" src="teavm/runtime.js"></script>
+    <script type="text/javascript" charset="utf-8" src="teavm/classes.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://jgraph.github.io/mxgraph/javascript/examples/grapheditor/www/styles/grapheditor.css">
+    <script src="https://www.draw.io/js/app.min.js"></script>
+    <style type="text/css">
+	.bgimg{
+	width:65px;
+	height:65px;
+	display: inline-block;
+	background-color: #808080;
+   	background: #000 url(sidebar.jpg) no-repeat;
+    }
+    
+    .geBackgroundPage{
+    position: absolute;
+    right:0px;
+    z-index:1;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 12px;
+    top: 95px;
+    width: 240px;
+    bottom: 46px; 
+    }
+    .geTopbar{
+    top: 95px;
+    width: 240px;
+    bottom: 46px;
+    }
+    .geLeftBtn{
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    bottom: 8px;
+    width: 20px;
+    margin: 4px;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQBAMAAADQT4M0AAAAIVBMVEUAAAB2dnZ4eHh3d3d1dXVxcXF2dnZ2dnZ2dnZxcXF2dnYmb3w1AAAACnRSTlMAfCTkhhvb7cQSPH2JPgAAADRJREFUCNdjwACMAmBKaiGYs2oJmLPKAZ3DabU8AMRTXpUKopislqFyVzCAuUZgikkBZjoAcMYLnp53P/UAAAAASUVORK5CYII=");
+    }
+    .geRightBtn{
+    position: absolute;
+    left: 202px;
+    top: 8px;
+    bottom: 8px;
+    width: 20px;
+    margin: 4px;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQBAMAAADQT4M0AAAAIVBMVEUAAAB2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnYBuwCcAAAACnRSTlMAfCTkhhvb7cQSPH2JPgAAADZJREFUCNdjQAOMAmBKaiGY8loF5rKswsZlrVo8AUiFrTICcbIWK8A5DF1gDoMymMPApIAwHwCS0Qx/U7qCBQAAAABJRU5ErkJggg==");
+    }
+    </style>
+  </head>
+  <body onload="main()">
+ <button class="geBackgroundPage" id="ArnBtn"style="top: 95px;width: 79.91px; height: 34.1px; opacity:0;z-index:10"></button>
+ <button class="geBackgroundPage" id="TxtBtn"style="top: 95px;right:79.91px;width: 79.91px; height: 34.1px; opacity:0;z-index:10"></button>
+ <button class="geBackgroundPage" id="StlBtn"style="top: 95px;right:159.82px;width: 79.91px; height: 34.1px; opacity:0;z-index:10"></button>
+ <button class="geBackgroundPage" id="LftBtn"style="top: 140px;right:205.73px;width: 20px; height: 84.24px; opacity:0;z-index:10"></button>
+ <button class="geBackgroundPage" id="RghtBtn"style="top: 140px;right:14.017px;width: 20px; height: 84.24px; opacity:0;z-index:10"></button>
+ <input type="checkbox", style="margin: 0px 6px 0px 0px;" id="chk" checked>
+  <input type="checkbox", style="margin: 0px 6px 0px 0px;" id="chkgrad">
+  <input type="checkbox", style="margin: 0px 6px 0px 0px;" id="chkline" checked>
+  <input type="checkbox", style="margin: 0px 6px 0px 0px;" id="chkshadow" checked>
+ <button class="geColorBtn" style="position: absolute; margin-top: -4px; right: 20px; height: 22px;" id="clrbtn"></button>
+ <div  style="width:36px;height:12px;margin:3px;border:1px solid black;background-color:#e6d0de;" id="clrinbtn"></div>
+  <button class="geColorBtn" style="display: none;" id="clrbtngrd"></button>
+ <div  style="width:36px;height:12px;margin:3px;border:1px solid black;background-color:#97d077;" id="clrinbtngrd"></div>
+ <button class="geColorBtn" style="position: absolute; margin-top: -4px; right: 20px; height: 22px;" id="clrbtnline"></button>
+ <div  style="width:36px;height:12px;margin:3px;border:1px solid black;background-color:#000000;" id="clrinbtnline"></div>
+ <div class= "geBtnUp" style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 9px; width: 10px;" id="btnup"></div>
+ <div class= "geBtnDown" style="border: none; position: relative; height: 9px; width: 10px;" id="btndown"></div>
+  <div class= "geBtnUp" style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 9px; width: 10px;" id="btnup1"></div>
+ <div class= "geBtnDown" style="border: none; position: relative; height: 9px; width: 10px;" id="btndown1"></div>
+   <div class= "geBtnUp" style="border-bottom: 1px solid rgb(192, 192, 192); position: relative; height: 9px; width: 10px;" id="btnup2"></div>
+ <div class= "geBtnDown" style="border: none; position: relative; height: 9px; width: 10px;" id="btndown2"></div>
+ <button style="width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);" id="clr1"></button>
+ <button style="width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(238, 238, 238); border: 1px solid rgb(54, 57, 61);" id="clr2"></button>
+ <button style="width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(249, 247, 237); border: 1px solid rgb(54, 57, 61);" id="clr3"></button>
+ <button style="width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(255, 204, 153); border: 1px solid rgb(54, 57, 61);" id="clr4"></button>
+ <button style="width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(204, 229, 255); border: 1px solid rgb(54, 57, 61);" id="clr5"></button>
+ <button style="width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(255, 255, 136); border: 1px solid rgb(54, 57, 61);" id="clr6"></button>
+ <button style="width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(205, 235, 139); border: 1px solid rgb(54, 57, 61);" id="clr7"></button>
+ <button style="width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(255, 204, 204); border: 1px solid rgb(54, 57, 61);" id="clr8"></button>
+    <!-- TODO: add HTML content -->
+  </body>
+</html>

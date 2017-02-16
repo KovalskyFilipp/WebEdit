@@ -4,6 +4,7 @@ import org.teavm.jso.dom.html.HTMLElement;
 
 public class Buttons
     extends Client {
+
     public static void buttonup() {
         HTMLElement Element = linewidth;
         width++;
@@ -131,7 +132,16 @@ public class Buttons
         }
         switch (i) {
         case 2: {
-            changeclr("clr1",
+
+            ColorButton b1 = new ColorButton("clr1", color1, onlycolor);
+            ColorButton b2 = new ColorButton("clr2", color2, onlycolor);
+            ColorButton b3 = new ColorButton("clr3", color3, onlycolor);
+            ColorButton b4 = new ColorButton("clr4", color4, onlycolor);
+            ColorButton b5 = new ColorButton("clr5", color5, onlycolor);
+            ColorButton b6 = new ColorButton("clr6", color6, onlycolor);
+            ColorButton b7 = new ColorButton("clr7", color7, onlycolor);
+            ColorButton b8 = new ColorButton("clr8", color8, onlycolor);
+            /*changeclr("clr1",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);");
             changeclr("clr2",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(238, 238, 238); border: 1px solid rgb(54, 57, 61);");
@@ -146,11 +156,20 @@ public class Buttons
             changeclr("clr7",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(205, 235, 139); border: 1px solid rgb(54, 57, 61);");
             changeclr("clr8",
-                "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(255, 204, 204); border: 1px solid rgb(54, 57, 61);");
+                "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(255, 204, 204); border: 1px solid rgb(54, 57, 61);");*/
             break;
         }
         case 1: {
-            changeclr("clr1",
+
+            ColorButton b1 = new ColorButton("clr1", color9, onlycolor);
+            ColorButton b2 = new ColorButton("clr2", color10, onlycolor);
+            ColorButton b3 = new ColorButton("clr3", color11, onlycolor);
+            ColorButton b4 = new ColorButton("clr4", color12, onlycolor);
+            ColorButton b5 = new ColorButton("clr5", color13, onlycolor);
+            ColorButton b6 = new ColorButton("clr6", color14, onlycolor);
+            ColorButton b7 = new ColorButton("clr7", color15, onlycolor);
+            ColorButton b8 = new ColorButton("clr8", color16, onlycolor);
+            /*changeclr("clr1",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);");
             changeclr("clr2",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-image: linear-gradient(rgb(245, 245, 245) 0px, rgb(179, 179, 179) 100%); border: 1px solid rgb(102, 102, 102);");
@@ -165,11 +184,19 @@ public class Buttons
             changeclr("clr7",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-image: linear-gradient(rgb(248, 206, 204) 0px, rgb(234, 107, 102) 100%); border: 1px solid rgb(184, 84, 80);");
             changeclr("clr8",
-                "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-image: linear-gradient(rgb(230, 208, 222) 0px, rgb(213, 115, 157) 100%); border: 1px solid rgb(153, 97, 133);");
+                "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-image: linear-gradient(rgb(230, 208, 222) 0px, rgb(213, 115, 157) 100%); border: 1px solid rgb(153, 97, 133);");*/
             break;
         }
         case 3: {
-            changeclr("clr1",
+            ColorButton b1 = new ColorButton("clr1", color17, onlycolor);
+            ColorButton b2 = new ColorButton("clr2", color18, onlycolor);
+            ColorButton b3 = new ColorButton("clr3", color19, onlycolor);
+            ColorButton b4 = new ColorButton("clr4", color20, onlycolor);
+            ColorButton b5 = new ColorButton("clr5", color21, onlycolor);
+            ColorButton b6 = new ColorButton("clr6", color22, onlycolor);
+            ColorButton b7 = new ColorButton("clr7", color23, onlycolor);
+            ColorButton b8 = new ColorButton("clr8", color24, onlycolor);
+            /*changeclr("clr1",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);");
             changeclr("clr2",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(245, 245, 245); border: 1px solid rgb(102, 102, 102);");
@@ -184,7 +211,7 @@ public class Buttons
             changeclr("clr7",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(248, 206, 204); border: 1px solid rgb(184, 84, 80);");
             changeclr("clr8",
-                "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(225, 213, 231); border: 1px solid rgb(150, 115, 166);");
+                "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(225, 213, 231); border: 1px solid rgb(150, 115, 166);");*/
             break;
         }
         }
@@ -202,7 +229,15 @@ public class Buttons
         }
         switch (i) {
         case 2: {
-            changeclr("clr1",
+            ColorButton b1 = new ColorButton("clr1", color1, onlycolor);
+            ColorButton b2 = new ColorButton("clr2", color2, onlycolor);
+            ColorButton b3 = new ColorButton("clr3", color3, onlycolor);
+            ColorButton b4 = new ColorButton("clr4", color4, onlycolor);
+            ColorButton b5 = new ColorButton("clr5", color5, onlycolor);
+            ColorButton b6 = new ColorButton("clr6", color6, onlycolor);
+            ColorButton b7 = new ColorButton("clr7", color7, onlycolor);
+            ColorButton b8 = new ColorButton("clr8", color8, onlycolor);
+            /*changeclr("clr1",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);");
             changeclr("clr2",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(238, 238, 238); border: 1px solid rgb(54, 57, 61);");
@@ -217,11 +252,19 @@ public class Buttons
             changeclr("clr7",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(205, 235, 139); border: 1px solid rgb(54, 57, 61);");
             changeclr("clr8",
-                "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(255, 204, 204); border: 1px solid rgb(54, 57, 61);");
+                "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(255, 204, 204); border: 1px solid rgb(54, 57, 61);");*/
             break;
         }
         case 1: {
-            changeclr("clr1",
+            ColorButton b1 = new ColorButton("clr1", color9, onlycolor);
+            ColorButton b2 = new ColorButton("clr2", color10, onlycolor);
+            ColorButton b3 = new ColorButton("clr3", color11, onlycolor);
+            ColorButton b4 = new ColorButton("clr4", color12, onlycolor);
+            ColorButton b5 = new ColorButton("clr5", color13, onlycolor);
+            ColorButton b6 = new ColorButton("clr6", color14, onlycolor);
+            ColorButton b7 = new ColorButton("clr7", color15, onlycolor);
+            ColorButton b8 = new ColorButton("clr8", color16, onlycolor);
+            /*changeclr("clr1",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);");
             changeclr("clr2",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-image: linear-gradient(rgb(245, 245, 245) 0px, rgb(179, 179, 179) 100%); border: 1px solid rgb(102, 102, 102);");
@@ -236,11 +279,19 @@ public class Buttons
             changeclr("clr7",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-image: linear-gradient(rgb(248, 206, 204) 0px, rgb(234, 107, 102) 100%); border: 1px solid rgb(184, 84, 80);");
             changeclr("clr8",
-                "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-image: linear-gradient(rgb(230, 208, 222) 0px, rgb(213, 115, 157) 100%); border: 1px solid rgb(153, 97, 133);");
+                "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-image: linear-gradient(rgb(230, 208, 222) 0px, rgb(213, 115, 157) 100%); border: 1px solid rgb(153, 97, 133);");*/
             break;
         }
         case 3: {
-            changeclr("clr1",
+            ColorButton b1 = new ColorButton("clr1", color17, onlycolor);
+            ColorButton b2 = new ColorButton("clr2", color18, onlycolor);
+            ColorButton b3 = new ColorButton("clr3", color19, onlycolor);
+            ColorButton b4 = new ColorButton("clr4", color20, onlycolor);
+            ColorButton b5 = new ColorButton("clr5", color21, onlycolor);
+            ColorButton b6 = new ColorButton("clr6", color22, onlycolor);
+            ColorButton b7 = new ColorButton("clr7", color23, onlycolor);
+            ColorButton b8 = new ColorButton("clr8", color24, onlycolor);
+            /*changeclr("clr1",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);");
             changeclr("clr2",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(245, 245, 245); border: 1px solid rgb(102, 102, 102);");
@@ -255,7 +306,7 @@ public class Buttons
             changeclr("clr7",
                 "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(248, 206, 204); border: 1px solid rgb(184, 84, 80);");
             changeclr("clr8",
-                "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(225, 213, 231); border: 1px solid rgb(150, 115, 166);");
+                "width: 36px; height: 30px; margin: 0px 6px 6px 0px; background-color: rgb(225, 213, 231); border: 1px solid rgb(150, 115, 166);");*/
             break;
         }
         }

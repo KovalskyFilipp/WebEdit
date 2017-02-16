@@ -3,7 +3,6 @@ package com.mydomain.MyCode;
 import org.teavm.jso.dom.html.HTMLButtonElement;
 import org.teavm.jso.dom.html.HTMLDocument;
 import org.teavm.jso.dom.html.HTMLElement;
-
 public class Client {
 
     public static HTMLDocument document = HTMLDocument.current();
@@ -78,14 +77,85 @@ public class Client {
     public static HTMLElement br = document.createElement("br");
     public static HTMLElement br1 = document.createElement("br");
     public static HTMLElement b2 = document.createElement("br");
+    public static String color1 = "background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);";
+    public static String color2 = "background-color: rgb(238, 238, 238); border: 1px solid rgb(54, 57, 61);";
+    public static String color3 = "background-color: rgb(249, 247, 237); border: 1px solid rgb(54, 57, 61);";
+    public static String color4 = "background-color: rgb(255, 204, 153); border: 1px solid rgb(54, 57, 61);";
+    public static String color5 = "background-color: rgb(204, 229, 255); border: 1px solid rgb(54, 57, 61);";
+    public static String color6 = "background-color: rgb(255, 255, 136); border: 1px solid rgb(54, 57, 61);";
+    public static String color7 = "background-color: rgb(205, 235, 139); border: 1px solid rgb(54, 57, 61);";
+    public static String color8 = "background-color: rgb(255, 204, 204); border: 1px solid rgb(54, 57, 61);";
+    public static String color9 = "background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);";
+    public static String color10 =
+        "background-image: linear-gradient(rgb(245, 245, 245) 0px, rgb(179, 179, 179) 100%); border: 1px solid rgb(102, 102, 102);";
+    public static String color11 =
+        "background-image: linear-gradient(rgb(218, 232, 252) 0px, rgb(126, 166, 224) 100%); border: 1px solid rgb(108, 142, 191);";
+    public static String color12 =
+        "background-image: linear-gradient(rgb(213, 232, 212) 0px, rgb(151, 208, 119) 100%); border: 1px solid rgb(130, 179, 102);";
+    public static String color13 =
+        "background-image: linear-gradient(rgb(255, 205, 40) 0px, rgb(255, 165, 0) 100%); border: 1px solid rgb(215, 155, 0);";
+    public static String color14 =
+        "background-image: linear-gradient(rgb(255, 242, 204) 0px, rgb(255, 217, 102) 100%); border: 1px solid rgb(214, 182, 86);";
+    public static String color15 =
+        "background-image: linear-gradient(rgb(248, 206, 204) 0px, rgb(234, 107, 102) 100%); border: 1px solid rgb(184, 84, 80);";
+    public static String color16 =
+        "background-image: linear-gradient(rgb(230, 208, 222) 0px, rgb(213, 115, 157) 100%); border: 1px solid rgb(153, 97, 133);";
+    public static String color17 = "background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);";
+    public static String color18 = "background-color: rgb(245, 245, 245); border: 1px solid rgb(102, 102, 102);";
+    public static String color19 = "background-color: rgb(218, 232, 252); border: 1px solid rgb(108, 142, 191);";
+    public static String color20 = "background-color: rgb(213, 232, 212); border: 1px solid rgb(130, 179, 102);";
+    public static String color21 = "background-color: rgb(255, 230, 204); border: 1px solid rgb(215, 155, 0);";
+    public static String color22 = "background-color: rgb(255, 242, 204); border: 1px solid rgb(214, 182, 86);";
+    public static String color23 = "background-color: rgb(248, 206, 204); border: 1px solid rgb(184, 84, 80);";
+    public static String color24 = "background-color: rgb(225, 213, 231); border: 1px solid rgb(150, 115, 166);";
+    public static String SubButton = "background-color:";
+    public static String SubBorder = "border";
+    public static String SubSolid = "solid";
     static int i = 2;
     static int width = 6;
     static int perimeterint = 0;
     static int opacityint = 100;
     public static void main(String[] args) {
-
+        /* String color1 = "background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);";
+        String color2 = "background-color: rgb(238, 238, 238); border: 1px solid rgb(54, 57, 61);";
+        String color3 = "background-color: rgb(249, 247, 237); border: 1px solid rgb(54, 57, 61);";
+        String color4 = "background-color: rgb(255, 204, 153); border: 1px solid rgb(54, 57, 61);";
+        String color5 = "background-color: rgb(204, 229, 255); border: 1px solid rgb(54, 57, 61);";
+        String color6 = "background-color: rgb(255, 255, 136); border: 1px solid rgb(54, 57, 61);";
+        String color7 = "background-color: rgb(205, 235, 139); border: 1px solid rgb(54, 57, 61);";
+        String color8 = "background-color: rgb(255, 204, 204); border: 1px solid rgb(54, 57, 61);";
+        String color9 = "background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);";
+        String color10 =
+            "background-image: linear-gradient(rgb(245, 245, 245) 0px, rgb(179, 179, 179) 100%); border: 1px solid rgb(102, 102, 102);";
+        String color11 =
+            "background-image: linear-gradient(rgb(218, 232, 252) 0px, rgb(126, 166, 224) 100%); border: 1px solid rgb(108, 142, 191);";
+        String color12 =
+            "background-image: linear-gradient(rgb(213, 232, 212) 0px, rgb(151, 208, 119) 100%); border: 1px solid rgb(130, 179, 102);";
+        String color13 =
+            "background-image: linear-gradient(rgb(255, 205, 40) 0px, rgb(255, 165, 0) 100%); border: 1px solid rgb(215, 155, 0);";
+        String color14 =
+            "background-image: linear-gradient(rgb(255, 242, 204) 0px, rgb(255, 217, 102) 100%); border: 1px solid rgb(214, 182, 86);";
+        String color15 =
+            "background-image: linear-gradient(rgb(248, 206, 204) 0px, rgb(234, 107, 102) 100%); border: 1px solid rgb(184, 84, 80);";
+        String color16 =
+            "background-image: linear-gradient(rgb(230, 208, 222) 0px, rgb(213, 115, 157) 100%); border: 1px solid rgb(153, 97, 133);";
+        String color17 = "background-color: rgb(255, 255, 255); border: 1px solid rgb(0, 0, 0);";
+        String color18 = "background-color: rgb(245, 245, 245); border: 1px solid rgb(102, 102, 102);";
+        String color19 = "background-color: rgb(218, 232, 252); border: 1px solid rgb(108, 142, 191);";
+        String color20 = "background-color: rgb(213, 232, 212); border: 1px solid rgb(130, 179, 102);";
+        String color21 = "background-color: rgb(255, 230, 204); border: 1px solid rgb(215, 155, 0);";
+        String color22 = "background-color: rgb(255, 242, 204); border: 1px solid rgb(214, 182, 86);";
+        String color23 = "background-color: rgb(248, 206, 204); border: 1px solid rgb(184, 84, 80);";
+        String color24 = "background-color: rgb(225, 213, 231); border: 1px solid rgb(150, 115, 166);";*/
         document.getBody().setAttribute("class", "geEditor");
-
+        ColorButton b1 = new ColorButton("clr1", color1, onlycolor);
+        ColorButton b2 = new ColorButton("clr2", color2, onlycolor);
+        ColorButton b3 = new ColorButton("clr3", color3, onlycolor);
+        ColorButton b4 = new ColorButton("clr4", color4, onlycolor);
+        ColorButton b5 = new ColorButton("clr5", color5, onlycolor);
+        ColorButton b6 = new ColorButton("clr6", color6, onlycolor);
+        ColorButton b7 = new ColorButton("clr7", color7, onlycolor);
+        ColorButton b8 = new ColorButton("clr8", color8, onlycolor);
         CreateAttributes.insert(background, "geBackgroundPage", "", null, "");
         CreateAttributes.insert(topbar, "",
             "white-space: nowrap; color: rgb(112, 112, 112); text-align: left; cursor: default;",
@@ -207,34 +277,164 @@ public class Client {
         CreateAttributes.foroption(option2, "east", selectgrad, "East");
         CreateAttributes.foroption(option3, "West", selectgrad, "West");
         CreateAttributes.foroption(option4, "North", selectgrad, "North");
-        Child.child(onlycolor, "clr1");
-        Child.child(onlycolor, "clr2");
-        Child.child(onlycolor, "clr3");
-        Child.child(onlycolor, "clr4");
-        Child.child(onlycolor, "clr5");
-        Child.child(onlycolor, "clr6");
-        Child.child(onlycolor, "clr7");
-        Child.child(onlycolor, "clr8");
+        //Child.child(onlycolor, "clr1");
+        //Child.child(onlycolor, "clr2");
+        //Child.child(onlycolor, "clr3");
+        //Child.child(onlycolor, "clr4");
+        //Child.child(onlycolor, "clr5");
+        //Child.child(onlycolor, "clr6");
+        //Child.child(onlycolor, "clr7");
+        //Child.child(onlycolor, "clr8");
         arrangebutton.listenClick(evt -> Buttons.arnBtn());
         textbutton.listenClick(evt -> Buttons.txtBtn());
         stylebutton.listenClick(evt -> Buttons.stlBtn());
         leftbutton.listenMouseOver(evt -> Buttons.lshineBtn());
-        leftbutton.listenClick(evt -> Buttons.left());
-        rightbutton.listenClick(evt -> Buttons.right());
+        leftbutton.listenClick(evt -> {
+            if (i == 1)
+            {
+                i = 3;
+            }
+            else
+            {
+                i--;
+            }
+            switch (i) {
+            case 2: {
+                b1.setColors(color1);
+                b2.setColors(color2);
+                b3.setColors(color3);
+                b4.setColors(color4);
+                b5.setColors(color5);
+                b6.setColors(color6);
+                b7.setColors(color7);
+                b8.setColors(color8);
+                break;
+            }
+            case 1: {
+                b1.setColors(color9);
+                b2.setColors(color10);
+                b3.setColors(color11);
+                b4.setColors(color12);
+                b5.setColors(color13);
+                b6.setColors(color14);
+                b7.setColors(color15);
+                b8.setColors(color16);
+                break;
+            }
+            case 3: {
+                b1.setColors(color17);
+                b2.setColors(color18);
+                b3.setColors(color19);
+                b4.setColors(color20);
+                b5.setColors(color21);
+                b6.setColors(color22);
+                b7.setColors(color23);
+                b8.setColors(color24);
+                break;
+            }
+            }
+
+        });
+
+        rightbutton.listenClick(evt -> {
+            if (i == 3)
+            {
+                i = 1;
+            }
+            else
+            {
+                i++;
+            }
+            switch (i) {
+            case 2: {
+                b1.setColors(color1);
+                b2.setColors(color2);
+                b3.setColors(color3);
+                b4.setColors(color4);
+                b5.setColors(color5);
+                b6.setColors(color6);
+                b7.setColors(color7);
+                b8.setColors(color8);
+                break;
+            }
+            case 1: {
+                b1.setColors(color9);
+                b2.setColors(color10);
+                b3.setColors(color11);
+                b4.setColors(color12);
+                b5.setColors(color13);
+                b6.setColors(color14);
+                b7.setColors(color15);
+                b8.setColors(color16);
+                break;
+            }
+            case 3: {
+                b1.setColors(color17);
+                b2.setColors(color18);
+                b3.setColors(color19);
+                b4.setColors(color20);
+                b5.setColors(color21);
+                b6.setColors(color22);
+                b7.setColors(color23);
+                b8.setColors(color24);
+                break;
+            }
+            }
+        });
         leftbutton.listenMouseOut(evt -> Buttons.lnoshineBtn());
         rightbutton.listenMouseOver(evt -> Buttons.rshineBtn());
         rightbutton.listenMouseOut(evt -> Buttons.rnoshineBtn());
         checker.listenClick(evt -> CheckBoxes.checkornot("chk"));
         checkergrad.listenClick(evt -> CheckBoxes.checkornot("chkgrad"));
         checkerline.listenClick(evt -> CheckBoxes.checkornot("chkline"));
-        color1button.listenClick(evt -> Buttons.colorbutton1());
-        color2button.listenClick(evt -> Buttons.colorbutton2());
-        color3button.listenClick(evt -> Buttons.colorbutton3());
-        color4button.listenClick(evt -> Buttons.colorbutton4());
-        color5button.listenClick(evt -> Buttons.colorbutton5());
-        color6button.listenClick(evt -> Buttons.colorbutton6());
-        color7button.listenClick(evt -> Buttons.colorbutton7());
-        color8button.listenClick(evt -> Buttons.colorbutton8());
+        //color1button.listenClick(evt -> Buttons.colorbutton1());
+        //color2button.listenClick(evt -> Buttons.colorbutton2());
+        //color3button.listenClick(evt -> Buttons.colorbutton3());
+        //color4button.listenClick(evt -> Buttons.colorbutton4());
+        //color5button.listenClick(evt -> Buttons.colorbutton5());
+        //color6button.listenClick(evt -> Buttons.colorbutton6());
+        //color7button.listenClick(evt -> Buttons.colorbutton7());
+
+        b1.add(evt -> {
+            b1.changeColor();
+            b1.changeColorLine();
+            b1.changeColorGrad();
+        });
+        b2.add(evt -> {
+            b2.changeColor();
+            b2.changeColorLine();
+            b2.changeColorGrad();
+        });
+        b3.add(evt -> {
+            b3.changeColor();
+            b3.changeColorLine();
+            b3.changeColorGrad();
+        });
+        b4.add(evt -> {
+            b4.changeColor();
+            b4.changeColorLine();
+            b4.changeColorGrad();
+        });
+        b5.add(evt -> {
+            b5.changeColor();
+            b5.changeColorLine();
+            b5.changeColorGrad();
+        });
+        b6.add(evt -> {
+            b6.changeColor();
+            b6.changeColorLine();
+            b6.changeColorGrad();
+        });
+        b7.add(evt -> {
+            b7.changeColor();
+            b7.changeColorLine();
+            b7.changeColorGrad();
+        });
+        b8.add(evt -> {
+            b8.changeColor();
+            b8.changeColorLine();
+            b8.changeColorGrad();
+        });
         btnup.listenClick(evt -> Buttons.buttonup());
         btndown.listenClick(evt -> Buttons.buttondown());
         btnup1.listenClick(evt -> Buttons.buttonup1());
@@ -242,4 +442,14 @@ public class Client {
         btnup2.listenClick(evt -> Buttons.buttonup2());
         btndown2.listenClick(evt -> Buttons.buttondown2());
     }
+
+    /* public void foradd(){
+        HTMLElement Clrinbtn = document.getElementById("clrinbtn");
+        HTMLElement Clrline = document.getElementById("clrinbtnline");
+        Clrinbtn.setAttribute("style",
+            "width:36px;height:12px;margin:3px;border:1px solid black;background-color:" + b1.getColorButton());
+        Clrline.setAttribute("style",
+            "width:36px;height:12px;margin:3px;border:1px solid black;background-color:" + b1.getColorLine());
+
+    }*/
 }
